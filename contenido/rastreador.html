@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Te ayudamos a encontrar a tu mascota, rellena el formulario y nuestra red de busqueda estara atenta a cualquier mascota perdida que siga las descripciones enviadas">
+    <meta name="keywords"  content="PERRO, GATO, MASCOTA, ENCUENTRA, PERDIDA">
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <title>Encontramos tu mascota perdida</title>
+</head>
+<body>
+    <header class="head_generico">
+        <h1 class="titulo nombre_pagina">ENCUENTRAME </h1>
+        <nav>
+            <ul class="barra1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./resena.html">Reseña</a>
+                    <div id="submenu1">
+                        <a href="./resena.html#titulo1_resena">Conocenos</a>
+                         <a href="./resena.html#titulo2_resena">¿A quien va dirigida nuestra comunidad?</a> 
+                     </div>
+                </li>
+                <li><a href="./adopta.html">Adopta una mascota</a></li>
+                <li><a href="./registro.html">Registra tu mascota</a></li>
+                <li><a href="./rastreador.html">Encuentrame</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="rastreo">
+        <h2>Rastreador de Mascotas</h2>
+        <form>
+            <fieldset class="rastreo__form">
+                <legend>Encuentra tu mascota</legend>
+                <label for="nro_serie">Numero de chip:</label>
+                <input type="text" name="nro_serie" />
+                <br>
+                <textarea>Pequeña descripcion ....</textarea>
+                <br>
+                <div>
+                    <p> Tiene collar identificador:</p>
+                    <div>
+                        <span> Si </span> 
+                        <input type="radio" name="identificador" value="Si" />
+                    </div>
+                    <div>
+                        <span>No</span> 
+                        <input type="radio" name="identificador" value="No" />
+                    </div>
+                </div>
+                <input type="submit" value="Enviar formulario"/>
+                <input type="reset" value="Limpiar formulario"/>
+            </fieldset>
+    </div>
+    </form>
+    <footer class="clearfix footer_generico ">
+        <hr>
+        <a href="../index.html"><img src="../imagenes/flecha_retroceso1.png" alt="volver" /></a>
+        <p> <strong> Para mas informacion comunicate con nosotros al +56 961785969 </strong> </p>
+    </footer>
+</body>
+</html>

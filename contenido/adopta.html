@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="formulario facil para adopcion de perritos y gatitos">
+    <meta name="keywords"  content="ADOPTA, PERRO, GATO, MASCOTA, ADOPCION">
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <title>Nuestros pequeños que buscan un hogar</title>
+</head>
+<body>
+    <header class="head_generico">
+        <h1 class="titulo nombre_pagina">ADOPTA </h1>
+        <nav>
+            <ul class="barra1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./resena.html">Reseña</a>
+                    <div id="submenu1">
+                        <a href="./resena.html#titulo1_resena">Conocenos</a>
+                         <a href="./resena.html#titulo2_resena">¿A quien va dirigida nuestra comunidad?</a> 
+                     </div>
+                </li>
+                <li><a href="./adopta.html">Adopta una mascota</a></li>
+                <li><a href="./registro.html">Registra tu mascota</a></li>
+                <li><a href="./rastreador.html">Encuentrame</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="contenido">
+        <h2>Adopta</h2>
+        <div class="opcion1-adopta">
+                    <form>
+                        <fieldset class="datosadopta">
+                            <legend>Formulario</legend>
+                            <label for="nombre1">Nombre:</label>
+                            <input type="text" name="nombre1" placeHolder=" Ingresar tu nombre"/>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido"placeHolder=" Ingresar tu apellido" />
+                            <label for="direccion">Direccion:</label>
+                            <input type="text" name="direccion" placeHolder=" Ingresar tu direccion"/>
+                        </fieldset>
+                        <fieldset class="datosadopta__mascota">
+                                <p> Elija mascota  </p> 
+                                <select name="Perro">
+                                    <option value="Perro">Perro</option>
+                                    <option value="Gato">Gato</option>
+                                </select>
+                                <select name="Mediano">
+                                    <option value= "Mediano">Mediano</option>
+                                    <option value= "Grande">Grande</option>
+                                </select>
+                            <textarea>Escribe tu msj....</textarea>
+                            <div>
+                                <p> Desea mantenerse informado sobre mascotas perdidas y por adoptar  
+                                <input type="checkbox" name="acepta" value="1" /></p>
+                            </div>
+                            <input class="boton" type="submit" value="Enviar"/>
+                            <input class="boton" type="reset" value="Limpiar"/> 
+                        </fieldset> 
+                    </form>
+        </div>
+        <div class="galeria" >
+                <h2>Nuestros pequeños por adoptar</h2>
+                <div class="galeria_adopta">
+                    <div class="descripcion">                            
+                            <img src="../imagenes/img1.jpg" alt="adopcion1" />
+                            <p >Nombre: xxxxx </p>
+                    </div>
+                    <div class="descripcion">
+                            <img src="../imagenes/img2.jpeg" alt="adopcion2"/>
+                            <p >Nombre: xxxxx </p>
+                    </div>   
+                    <div class="descripcion">
+                        <img src="../imagenes/img3.jpg" alt="adopcion3"/>
+                        <p >Nombre: xxxxx </p>
+                    </div>
+                    <div class="descripcion">
+                        <img src="../imagenes/img4.jpg" alt="adopcion4"/>
+                        <p >Nombre: xxxxx </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer class="clearfix footer_generico ">
+        <hr>
+        <a href="../index.html"><img src="../imagenes/flecha_retroceso1.png" alt="volver" /></a>
+        <p> <strong> Para mas informacion comunicate con nosotros al +56 961785969 </strong> </p>
+    </footer>
+</body>
+</html>

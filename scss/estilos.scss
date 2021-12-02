@@ -1,0 +1,356 @@
+$color-fondo-principal: rgba(175, 219, 223, 0.644);
+$degradado1: linear-gradient(#b2e3f0, #abddb8,#b2e3f0 );
+$animal1: url(../imagenes/genesis\ perro\(1\).png);
+$animal2: url(../imagenes/genesis\ gato.png);
+*{
+  box-sizing: border-box;
+}
+html{
+background-image: url(../imagenes/patitas1.jpg);
+background-repeat: round;  
+}
+body{
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: $color-fondo-principal;
+}
+h1{
+  font-size: 1.5em;
+}
+h2{
+  font-size: 1.25em;
+font-style: italic;
+font-weight: bold;
+color: rgb(14, 13, 13);
+}  
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav{
+  width: 100%;
+}
+.portada{
+  width: 100%;
+  height: 400px;
+  img{
+    width: 70%;
+    height: 400px;
+    border-style: ridge;
+  }
+}
+
+.barra li, .barra1 li{
+  display: inline;
+  border-style: solid;
+  border-color: rgb(21, 124, 128);
+  padding: 10px 10px 10px 10px;
+  background-color: #1bf0a9;
+  a{
+    text-decoration: none; 
+  }
+}
+.barra1 li{
+  transform: rotate(10deg);
+  border-radius: 10px;
+}
+input, select{
+  background-image: radial-gradient(#8acedf, #5dcf7c);
+}
+/* estilo para el registro*/
+textarea{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  background-image: radial-gradient(#8acedf, #5dcf7c);
+}
+a:hover {
+  color: grey;
+  transform: scale(1.3,1);
+  }
+ 
+/*-------------------------- flex box----------------------------------*/
+ .head_generico
+ {
+      width: 100%;
+      height: 400px;     
+      background-image: url(../imagenes/img_adopta2.jpg);  
+      background-repeat: round;  
+      display: flex;
+      justify-content: flex-end;
+      li:hover>#submenu1{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+      h1{
+        margin-top: 10px;
+        position: absolute;
+        color: rgb(29, 209, 149);
+        background-color: black;
+        }
+        nav {
+          #submenu1 
+          {
+            display: none;
+            min-width: 140px;
+            a{
+              padding: 5px;
+              margin: 5px;
+              border: 1px solid #000;
+              }
+          }
+            ul li{
+            width: 10%;
+            width: 250px;
+            display: block;
+           }
+        }
+ }
+/* Sombreado*/
+
+/*grid*/
+/*------------------------ propiedades para telefonos------------------------------------*/
+.grid{
+display: grid;
+  .barra {
+  display: grid;
+  padding: 0;
+  margin-top: 5px;
+  }
+  aside{
+    display: grid;
+    border-style: solid;
+    padding: 5px;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  footer{
+    /*display: block;*/
+    border: 1px solid black;
+    background-image: linear-gradient(#8acedf, #5dcf7c);
+  }
+  header{
+    background-image: linear-gradient(#8acedf, #5dcf7c);
+  }
+}
+/* --estilo para el adopta-------*/
+.contenido{
+  display: grid;
+  grid-template-columns: auto;
+  h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+.opcion1-adopta{
+  margin: 20px;
+  height: 100%;
+  padding: 5px;
+  background-image: $degradado1;
+  border: 1px solid green;
+  .datosadopta {
+    display: grid;
+    font-style: oblique;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto;
+    label{
+      padding: 5px;
+      height: 10px;
+    }
+    input{
+      margin: 10px;
+      height: 60px;
+    }
+  }
+  .datosadopta__mascota{
+    display: grid;
+    font-style: oblique;
+    background-color: rgba(128, 128, 128, 0.39);
+    select{
+      padding: 5px;
+      height: 40px;
+      width: 100px;
+    }
+    textarea{
+      padding: 5px;
+      height: 100px;
+   }
+   .boton{
+    height: 40px;
+    width: 100px;
+   }
+  }
+}
+.galeria{
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: grid;
+  font-style: oblique;
+  grid-template-columns: auto auto auto;
+  .galeria_adopta{
+    background-image: $degradado1;
+    border: 1px solid green;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+    }
+    .descripcion{
+      position: relative;
+      flex-basis: 310px;
+      p{
+        position: absolute;
+        bottom: 0;
+        margin: 5px;
+        background-color: blue;
+        }
+    }
+  }
+}
+}
+.informacion{
+  background-color: $color-fondo-principal;
+  margin: 10px 10px;
+  padding: 5px;
+  border: 1px solid black;
+ p, h2{
+  margin: 20px 20px 20px;
+ }
+ .datosDueno1, .datosMascota1 {
+  margin-top: 20px;
+  display: grid;
+    font-style: oblique;
+  text-align: left;
+  grid-template-columns: auto;
+  margin: 20px;
+  input{
+    height: 20px;
+    width: 300px;
+  }
+  select{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .form-check-input{ 
+    height: 20px;
+    width: 30px;
+    margin-bottom: 10px;
+  }
+}
+}
+.informacion, .resena, .contenido, .registratumascota, .rastreo{
+margin: 10px 10px;
+padding: 5px;
+border: 1px solid black;
+}
+/*--------------------------- propiedades para computadora-----------------------------*/
+@media only screen and (min-width: 900px)
+{
+  .grid{
+    grid-template-columns: 60% 40%;
+      header{
+        grid-column: 1 / 3;
+        border: 1px solid black;
+        text-align: center;
+      }
+      .barra {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-column-gap: 5px;
+      }
+        footer{
+        grid-column: 1 / 3;
+        border: 1px solid black;
+      } 
+    }
+}
+/* -----------------BEM----------------------------------------------------------*/
+.resena{
+  background-color: rgba(119, 136, 153, 0.664);
+  .resena__titulo1{
+     text-align: center;
+  }
+  .resena__titulo2{
+    text-align: end;
+  }
+}
+.rastreo{
+  h2{
+    text-transform: uppercase;
+  }
+  .rastreo__form{
+    background-image: $degradado1;
+    font-style: oblique;
+    display: grid;
+    grid-template-columns: auto;
+    width: 500px;
+  }
+}
+.registratumascota{
+  background-color: rgba(135, 222, 161, 0.466);
+  .registratumascota_datosDueno{
+    background-color: rgba(95, 158, 160, 0.692);
+    font-style: oblique;
+    display: grid;
+    width: 500px;
+    height: 300px;
+  }
+  .registratumascota_datosm{
+    background-color: rgba(95, 158, 160, 0.692);
+    font-style: oblique;
+    display: grid;
+    width: 700px;
+    height: 900px;
+    input{
+      height: 50px;
+      width: 300px;
+    }
+    .radio{
+      height: 20px;
+      width: 20px;
+    }
+    select{
+      height: 50px;
+      width: 100px;
+      margin-bottom: 10px;
+      }
+    }
+}
+$opc: gato;
+
+@if $opc == perro {
+  #img-perro{
+    display: inline-block;
+  }
+  #img-gato{
+    display: none;
+  }
+}
+@if $opc == gato {
+  #img-perro{
+    display: none;
+  }
+  #img-gato{
+    display: inline-block;
+  }
+}
+@else
+{
+  #img-perro{
+    display: none;
+  }
+  #img-gato{
+    display: none;
+  }
+}
+
+
+

@@ -1,0 +1,6 @@
+1. titulos: Todos los titulos fueron cambiados, adaptado a instruir al visitante lo que se realiza en esa pagina
+2. Meta Etiqueta (Descripcion): Se coloco en todas las paginas alguna descripcion simple para que se visualice en el buscaodr
+3. Palabras Claves: Se acuparon palabras claves en cada una de las paginas, para que el usuario al colocar una de estas en la
+web se refleje como coincidencia mi pagina.
+
+todos estos cambio fueron colocados en 4 paginas ademas del index.html 

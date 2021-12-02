@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registra a tu mascota y accede a nuestra base de datos">
+    <meta name="keywords"  content="ADOPTA, PERRO, GATO, MASCOTA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&family=Zen+Old+Mincho:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../scss/estilos.css">
+    <title>Registra tu mascota</title>
+</head>
+<body>
+    <header class="head_generico"> 
+        <h1 class="titulo nombre_pagina">REGISTRO</h1>
+        <nav>
+            <ul class="barra1">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="./resena.html">Reseña</a>
+                    <div id="submenu1">
+                        <a href="./resena.html#titulo1_resena">Conocenos</a>
+                        <a href="./resena.html#titulo2_resena">¿A quien va dirigida nuestra comunidad?</a> 
+                    </div>
+                </li>
+                <li><a href="./adopta.html">Adopta una mascota</a></li>
+                <li><a href="./registro.html">Registra tu mascota</a></li>
+                <li><a href="./rastreador.html">Encuentrame</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="registratumascota">
+        <h2>Registra tu mascota</h2>
+        <form>
+            <fieldset class="registratumascota_datosDueno">
+                <legend>Datos del dueño</legend>            
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nombre" placeHolder=" Ingresar tu nombre"/>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeHolder=" Ingresar tu apellido" />
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" placeHolder=" Ingresar tu direccion" />
+                <label for="telefono:">Telefono:</label>
+                <input type="text" name="telefono" placeHolder=" Ingresar tu telefono"/>
+            </fieldset>
+            <fieldset class="registratumascota_datosm">
+                <legend>Datos de la mascota</legend>
+                <label for="nombre_mascota">Nombre:</label>
+                <input type="text" name="nombre_mascota" placeHolder=" Ingresar nombre mascota" />
+                <p>Caracteristicas de tu mascota:</p>
+                <div class="caracterista-mascotas" style="display: grid; grid-template-columns: auto auto ">
+                    <div class="selector-caracteristicas">
+                        <select class="opcion_animal" name="Perro">
+                            <option value="Perro">Perro</option>
+                            <option value="Gato">Gato</option>  
+                        </select>
+                        <select name="Mediano">
+                            <option value= "Mediano">Mediano</option>
+                            <option value= "Grande">Grande</option>
+                        </select>
+                    </div>
+                    <div class="imagen-tipo-mascota">
+                        <img id="img-perro" src="../imagenes/genesis perro(1).png" width="200px" height="200px"  alt="tipo de mascota">
+                        <img id="img-gato" src="../imagenes/genesis gato.png" width="200px" height="200px" alt="tipo de mascota">
+                    </div>
+                </div>
+            
+            <label for="nro_serie">Numero de chip:</label>
+            <input type="text" name="nro_serie" placeHolder=" Ingresar nro. de chip" />
+            <textarea>Pequeña descripcion ....</textarea>
+            <p>Tiene collar identificador:</p>
+            <div>
+                <span>Si</span>
+                <input class="radio" type="radio" name="identificador" value="Si" />
+            </div>
+            <div>
+                <span>No</span>
+                <input class="radio" type="radio" name="identificador" value="No" />
+            </div>
+            <input type="submit" value="Enviar formulario"/>
+            <input type="reset" value="Limpiar formulario"/>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <footer class="clearfix footer_generico ">
+        <hr>
+        <a href="../index.html"><img src="../imagenes/flecha_retroceso1.png" alt="volver" /></a>
+        <p> <strong> Para mas informacion comunicate con nosotros al +56 961785969 </strong> </p>
+    </footer>
+</body>
+</html>
