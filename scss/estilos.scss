@@ -41,7 +41,6 @@ nav{
     border-style: ridge;
   }
 }
-
 .barra li, .barra1 li{
   display: inline;
   border-style: solid;
@@ -74,7 +73,7 @@ a:hover {
  .head_generico
  {
       width: 100%;
-      height: 400px;     
+      height: 500px;     
       background-image: url(../imagenes/img_adopta2.jpg);  
       background-repeat: round;  
       display: flex;
@@ -94,7 +93,7 @@ a:hover {
           #submenu1 
           {
             display: none;
-            min-width: 140px;
+            min-width: 120px;
             a{
               padding: 5px;
               margin: 5px;
@@ -102,13 +101,11 @@ a:hover {
               }
           }
             ul li{
-            width: 10%;
             width: 250px;
             display: block;
            }
         }
  }
-/* Sombreado*/
 
 /*grid*/
 /*------------------------ propiedades para telefonos------------------------------------*/
@@ -129,12 +126,14 @@ display: grid;
     border: 1px solid black;
   }
   footer{
-    /*display: block;*/
     border: 1px solid black;
-    background-image: linear-gradient(#8acedf, #5dcf7c);
+    background-image: $degradado1;
+    p{
+      margin: 10px;
+    }
   }
   header{
-    background-image: linear-gradient(#8acedf, #5dcf7c);
+    background-image: $degradado1;
   }
 }
 /* --estilo para el adopta-------*/
@@ -146,41 +145,54 @@ display: grid;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 .opcion1-adopta{
+  display: grid;
   margin: 20px;
   height: 100%;
   padding: 5px;
   background-image: $degradado1;
   border: 1px solid green;
+  border-radius: 30px;
   .datosadopta {
     display: grid;
     font-style: oblique;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto auto auto;
-    label{
-      padding: 5px;
-      height: 10px;
-    }
-    input{
-      margin: 10px;
-      height: 60px;
-    }
+    border: none;
+     label{
+       padding: 5px;
+       height: 10px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+     input{
+       margin: 10px;
+       height: 60px;
+       border-radius: 30px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
   }
   .datosadopta__mascota{
     display: grid;
     font-style: oblique;
-    background-color: rgba(128, 128, 128, 0.39);
+    border: none;
+    p{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
     select{
       padding: 5px;
       height: 40px;
       width: 100px;
+      border-radius: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     textarea{
       padding: 5px;
       height: 100px;
+      border-radius: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
    .boton{
     height: 40px;
     width: 100px;
+    border-radius: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
   }
 }
@@ -190,7 +202,6 @@ display: grid;
   text-align: center;
   display: grid;
   font-style: oblique;
-  grid-template-columns: auto auto auto;
   .galeria_adopta{
     background-image: $degradado1;
     border: 1px solid green;
@@ -201,6 +212,7 @@ display: grid;
       width: 300px;
       height: 300px;
       margin: 50px;
+      border-radius: 30px;
     }
     .descripcion{
       position: relative;
@@ -226,7 +238,7 @@ display: grid;
  .datosDueno1, .datosMascota1 {
   margin-top: 20px;
   display: grid;
-    font-style: oblique;
+  font-style: oblique;
   text-align: left;
   grid-template-columns: auto;
   margin: 20px;
@@ -247,12 +259,46 @@ display: grid;
 }
 }
 .informacion, .resena, .contenido, .registratumascota, .rastreo{
-margin: 10px 10px;
-padding: 5px;
 border: 1px solid black;
 }
+.rastreo__form{
+  background-image: $degradado1;
+  font-style: oblique;
+  display: grid;
+  grid-template-columns: auto;
+}
+.registratumascota{
+  background-color: rgba(135, 222, 161, 0.466);
+  .registratumascota_datosDueno{
+    background-color: rgba(95, 158, 160, 0.692);
+    font-style: oblique;
+    display: grid;
+    width: auto;
+    height: 300px;
+  }
+  .registratumascota_datosm{
+    background-color: rgba(95, 158, 160, 0.692);
+    font-style: oblique;
+    display: grid;
+    width: auto;
+    height: 900px;
+    input{
+      height: 50px;
+      width: 300px;
+    }
+    .radio{
+      height: 20px;
+      width: 20px;
+    }
+    select{
+      height: 50px;
+      width: 100px;
+      margin-bottom: 10px;
+      }
+    }
+}
 /*--------------------------- propiedades para computadora-----------------------------*/
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 770px)
 {
   .grid{
     grid-template-columns: 60% 40%;
@@ -271,7 +317,6 @@ border: 1px solid black;
         border: 1px solid black;
       } 
     }
-}
 /* -----------------BEM----------------------------------------------------------*/
 .resena{
   background-color: rgba(119, 136, 153, 0.664);
@@ -287,43 +332,30 @@ border: 1px solid black;
     text-transform: uppercase;
   }
   .rastreo__form{
-    background-image: $degradado1;
-    font-style: oblique;
-    display: grid;
-    grid-template-columns: auto;
     width: 500px;
   }
 }
 .registratumascota{
-  background-color: rgba(135, 222, 161, 0.466);
   .registratumascota_datosDueno{
-    background-color: rgba(95, 158, 160, 0.692);
-    font-style: oblique;
-    display: grid;
     width: 500px;
-    height: 300px;
   }
   .registratumascota_datosm{
-    background-color: rgba(95, 158, 160, 0.692);
-    font-style: oblique;
-    display: grid;
-    width: 700px;
-    height: 900px;
-    input{
-      height: 50px;
-      width: 300px;
-    }
-    .radio{
-      height: 20px;
-      width: 20px;
-    }
-    select{
-      height: 50px;
-      width: 100px;
-      margin-bottom: 10px;
-      }
+    width: 500px;
     }
 }
+.datosadopta {
+grid-template-columns: 40% 60%;
+grid-template-rows: auto auto auto;
+}
+.galeria{
+//grid-template-columns: auto auto auto;
+  .galeria_adopta{
+    border-radius: 30px;
+  }
+}
+
+}
+
 $opc: gato;
 
 @if $opc == perro {
@@ -351,6 +383,5 @@ $opc: gato;
     display: none;
   }
 }
-
 
 
